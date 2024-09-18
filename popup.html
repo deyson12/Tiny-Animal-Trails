@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Controlar el Animal</title>
+  <link rel="stylesheet" href="popup.css"> <!-- Vinculando el archivo CSS -->
+</head>
+<body>
+  <h1>Selecciona tu Animal</h1>
+
+  <div class="control-group">
+    <label for="animal">Animal:</label>
+    <select id="animal">
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/94e17671805451.5ca68c8a444f2.gif" selected>Mono</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/a0778e71805451.5ca68f846fdc7.gif">Cabra</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8e6b9871805451.5ca68f84700a2.gif">Yak</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7d81771805451.5ca68e4ac7166.gif">Oveja</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6a684b71805451.5ca68f8439065.gif">Burro</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/56b91371805451.5ca68f8438c0c.gif">Íbice</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/1771f671805451.5ca686538ab2f.gif">Avestruz</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b46b7f71805451.5ca67fdedeee3.gif">Gorilla</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/536caf71805451.5ca67fdedeac3.gif">Orangutan</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b4c60071805451.5ca686538ae06.gif">Rinoceronte</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/975b2e71805451.5ca68c8ab8cb6.gif">Leon</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2239cf71805451.5ca68c8ab925c.gif">Tigre</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b1ac8371805451.5ca68c8ab8fea.gif">Leopardo</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/47fa6c71805451.5ca68ac7a25a7.gif">Elefante</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/49c51371805451.5ca686533e81e.gif">Toro</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6b42f171805451.5ca686533eb12.gif">Vaca</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/a710ce71805451.5ca68e4ac77de.gif">Llama</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/97589d71805451.5ca68c8b14fee.gif">Cebra</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/566d6471805451.5ca68c8b15322.gif">Caballo</option>
+      <option value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c6a18671805451.5ca727eff1742.gif">Cerdo</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label for="velocidad">Velocidad del animal: <span id="velocidadValue">1</span></label>
+    <input type="range" id="velocidad" min="0.1" max="5" step="0.1" value="1">
+  </div>
+
+  <div class="control-group">
+    <label for="tamano">Tamaño del animal: <span id="tamanoValue">35px</span></label>
+    <input type="range" id="tamano" min="10" max="100" step="1" value="35">
+  </div>
+
+  <!-- Switch para alternar entre seguir el mouse o moverse automáticamente -->
+  <div class="checkbox-group">
+    <label for="toggle-movimiento">El animal sigue el mouse:</label>
+    <input type="checkbox" id="toggle-movimiento" checked> <!-- El switch -->
+  </div>
+
+  <button id="toggle-animal">Agregar Animal</button>
+  <button id="reset-values">Restablecer Valores</button> <!-- Botón para restablecer -->
+
+  <script src="popup.js"></script>
+</body>
+</html>

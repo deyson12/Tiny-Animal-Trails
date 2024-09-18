@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar el scroll horizontal */
+}
+
+img {
+  pointer-events: none; /* Para evitar que interfiera con clics en la página */
+}
